@@ -91,17 +91,13 @@ import Globe from '@/components/Globe'
 import { Button } from '@/components/ui/button'
 import { Cover } from '@/components/ui/cover'
 import { HeroHighlight } from '@/components/ui/hero-highlight'
-import { TextGenerateEffect } from '@/components/ui/text-generate-effect'
+import { Typewriter } from '@/components/ui/typewriter-effect'
 import { motion } from 'framer-motion'
 import { ArrowRight, Github, Instagram, Linkedin } from 'lucide-react'
 import Link from 'next/link'
 import { FaTelegramPlane } from 'react-icons/fa'
 
 export default function Home() {
-	const words = `A passionate full-stack developer creating
-                  beautiful, functional, and user-friendly
-                  digital experiences.`
-
 	const container = {
 		hidden: { opacity: 0 },
 		show: {
@@ -172,10 +168,18 @@ export default function Home() {
 									</h1>
 								</motion.div>
 
-								<motion.div variants={item}>
-									<TextGenerateEffect words={words} />
-								</motion.div>
-
+								<div>
+									{' '}
+									<Typewriter
+										text={[
+											'A passionate Front End developer creating beautiful, functional, and user-friendly digital experiences.',
+										]}
+										speed={40}
+										delay={2000}
+										loop={false}
+										className='text-muted-foreground text-2xl'
+									/>
+								</div>
 								<motion.div
 									variants={item}
 									className='flex gap-4'

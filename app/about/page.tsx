@@ -52,7 +52,7 @@
 
 import { Button } from '@/components/ui/button'
 import { HeroHighlight } from '@/components/ui/hero-highlight'
-import { TextGenerateEffect } from '@/components/ui/text-generate-effect'
+import { Typewriter } from '@/components/ui/typewriter-effect'
 import { motion } from 'framer-motion'
 import Image from 'next/image'
 import Link from 'next/link'
@@ -142,7 +142,23 @@ export default function AboutPage() {
 						</motion.div>
 
 						<motion.div className='space-y-4' variants={item}>
-							<TextGenerateEffect words={words} />
+							<Typewriter
+								text={[
+									`I'm a full-stack developer with over 1 years of
+                experience building web applications. I
+                specialize in React, Next.js, and Node.js,
+                creating responsive and performant applications
+                that solve real-world problems..My journey in web development began when I built
+                my first website for a local business. Since
+                then, I've worked with startups and established
+                companies to bring their digital visions to
+                life.`,
+								]}
+								speed={40}
+								delay={2000}
+								loop={false}
+								className='text-muted-foreground text-xl'
+							/>
 							<motion.div
 								variants={item}
 								whileHover={{

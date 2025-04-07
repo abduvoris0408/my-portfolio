@@ -241,7 +241,7 @@ export default function Globe() {
 	return (
 		<div
 			ref={mountRef}
-			className='relative w-[300px] h-[300px] md:w-[400px] md:h-[400px] rounded-full overflow-hidden shadow-lg z-10 border '
+			className='relative mx-auto w-[300px] h-[300px] md:w-[400px] md:h-[400px] rounded-full overflow-hidden shadow-lg z-10 border '
 		>
 			{showHint && (
 				<div className='absolute bottom-4 right-4 bg-black bg-opacity-30 text-white text-sm px-3 py-1 rounded-full transition-opacity duration-1000 opacity-80 hover:opacity-100 pointer-events-none'></div>
