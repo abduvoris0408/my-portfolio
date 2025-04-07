@@ -137,7 +137,7 @@ export default function Navbar() {
 		{ href: '/', label: 'Home', icon: House },
 		{ href: '/about', label: 'About', icon: CircleUserRound },
 		{ href: '/projects', label: 'Projects', icon: FolderKanban },
-		{ href: '/skills', label: 'Skills', icon: ShieldCheck },
+		{ href: '/blogs', label: 'Blogs', icon: ShieldCheck },
 		{ href: '/gallery', label: 'Gallery', icon: Images },
 	]
 
@@ -192,7 +192,7 @@ export default function Navbar() {
 						</SheetTrigger>
 						<SheetContent
 							side='left'
-							className='w-[250px] sm:w-[300px]'
+							className='w-[300px] sm:w-[300px]'
 						>
 							<div className='flex flex-col h-full'>
 								<div className='flex items-center justify-between py-4'>

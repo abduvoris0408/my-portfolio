@@ -46,8 +46,9 @@
 // 	)
 // }
 import Tooltip from '@mui/material/Tooltip' // MUI Tooltip import qilish
-import { Github, Linkedin, Mail, Twitter } from 'lucide-react'
+import { Github, Instagram, Linkedin } from 'lucide-react'
 import Link from 'next/link'
+import { FaTelegramPlane } from 'react-icons/fa'
 
 export default function Footer() {
 	return (
@@ -66,7 +67,7 @@ export default function Footer() {
 							sx={{ backgroundColor: 'white', color: 'black' }}
 						>
 							<Link
-								href='https://github.com'
+								href='https://github.com/abduvoris0408'
 								target='_blank'
 								rel='noopener noreferrer'
 							>
@@ -78,7 +79,7 @@ export default function Footer() {
 						{/* LinkedIn uchun Tooltip */}
 						<Tooltip title='LinkedIn' arrow>
 							<Link
-								href='https://linkedin.com'
+								href="https://linkedin.com/AbduvorisMo'minov"
 								target='_blank'
 								rel='noopener noreferrer'
 							>
@@ -88,22 +89,25 @@ export default function Footer() {
 						</Tooltip>
 
 						{/* Twitter uchun Tooltip */}
-						<Tooltip title='Twitter' arrow>
+						<Tooltip title='Instagram' arrow>
 							<Link
-								href='https://twitter.com'
+								href='https://instagrom.com/abduvoris_mominov'
 								target='_blank'
 								rel='noopener noreferrer'
 							>
-								<Twitter className='h-5 w-5 text-muted-foreground hover:text-primary' />
-								<span className='sr-only'>Twitter</span>
+								<Instagram className='h-5 w-5 text-muted-foreground hover:text-primary' />
+								<span className='sr-only'>Instagrm</span>
 							</Link>
 						</Tooltip>
 
 						{/* Email uchun Tooltip */}
-						<Tooltip title='Email' arrow>
-							<Link href='mailto:hello@example.com'>
-								<Mail className='h-5 w-5 text-muted-foreground hover:text-primary' />
-								<span className='sr-only'>Email</span>
+						<Tooltip title='Telegram' arrow>
+							<Link
+								href='https://t.me/Abduvoris_Mominov'
+								target='_blank'
+							>
+								<FaTelegramPlane className='h-5 w-5 text-muted-foreground hover:text-primary' />
+								<span className='sr-only'>Telegram</span>
 							</Link>
 						</Tooltip>
 					</div>

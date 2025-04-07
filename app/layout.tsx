@@ -13,7 +13,7 @@ export const metadata: Metadata = {
 	title: 'Abduvoris Portfolio | Full-Stack Developer',
 	description:
 		'Professional portfolio of Abduvoris, a full-stack developer specializing in React, Next.js, and Node.js',
-		icons:'https://assets.aceternity.com/logo-dark.png'
+	icons: 'https://assets.aceternity.com/logo-dark.png',
 }
 
 export default function RootLayout({
