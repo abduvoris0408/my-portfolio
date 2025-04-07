@@ -287,7 +287,7 @@ export default function Navbar() {
 	]
 
 	return (
-		<header className='my-1 fixed w-full top-0 z-50 border rounded-xl bg-background/80 backdrop-blur-sm py-1'>
+		<header className='my-1 fixed w-full top-0 z-50 border rounded-xl bg-black backdrop-blur-sm py-1'>
 			<div className='container flex h-16 items-center justify-between'>
 				<Link href='/' className='border rounded-lg'>
 					<Image
